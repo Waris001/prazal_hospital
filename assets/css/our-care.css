@@ -1,0 +1,402 @@
+:root {
+    --primary: #0b8588;
+    --primary-dark: #076d70;
+    --dark: #0d3439;
+    --accent: #f47a5d;
+    --light: #f2faf7;
+    --white: #ffffff;
+    --text: #496268;
+    --border: #e2eeeb;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    color: var(--text);
+    background: var(--white);
+}
+
+/* =========================
+   PAGE HERO
+========================= */
+
+.care-hero {
+    position: relative;
+    padding: 95px 0 85px;
+    background:
+        linear-gradient(90deg, rgba(6, 60, 64, .93), rgba(6, 60, 64, .65)),
+        url("https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1800&q=85")
+        center/cover no-repeat;
+    overflow: hidden;
+}
+
+.care-hero::after {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border: 1px solid rgba(255,255,255,.15);
+    border-radius: 50%;
+    right: -70px;
+    bottom: -100px;
+}
+
+.care-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 750px;
+}
+
+.care-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #ff8b70;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.care-hero h1 {
+    color: #fff;
+    font-size: clamp(38px, 5vw, 60px);
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.care-hero p {
+    color: rgba(255,255,255,.88);
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 650px;
+}
+
+/* =========================
+   COMMON SECTION
+========================= */
+
+.care-section {
+    padding: 90px 0;
+}
+
+.care-section.soft {
+    background: var(--light);
+}
+
+.section-heading {
+    max-width: 700px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.section-heading .small-title {
+    color: var(--accent);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.section-heading h2 {
+    color: var(--dark);
+    font-size: clamp(30px, 4vw, 42px);
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.section-heading p {
+    color: var(--text);
+    line-height: 1.8;
+}
+
+/* =========================
+   CARE CARDS
+========================= */
+
+.care-card {
+    height: 100%;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 30px;
+    transition: all .3s ease;
+}
+
+.care-card:hover {
+    transform: translateY(-7px);
+    border-color: rgba(11,133,136,.25);
+    box-shadow: 0 18px 45px rgba(13,52,57,.10);
+}
+
+.care-icon {
+    width: 58px;
+    height: 58px;
+    border-radius: 15px;
+    background: #e7f6f2;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    margin-bottom: 22px;
+}
+
+.care-card h3 {
+    color: var(--dark);
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.care-card p {
+    line-height: 1.7;
+    margin-bottom: 0;
+    font-size: 15px;
+}
+
+/* =========================
+   LIST CARDS
+========================= */
+
+.service-list-card {
+    background: #fff;
+    border-radius: 18px;
+    padding: 30px;
+    height: 100%;
+    border: 1px solid var(--border);
+}
+
+.service-list-card h3 {
+    color: var(--dark);
+    margin-bottom: 22px;
+    font-size: 22px;
+}
+
+.service-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.service-list li {
+    position: relative;
+    padding: 11px 0 11px 30px;
+    border-bottom: 1px solid #edf3f1;
+    font-size: 15px;
+}
+
+.service-list li:last-child {
+    border-bottom: none;
+}
+
+.service-list li::before {
+    content: "\F26A";
+    font-family: "bootstrap-icons";
+    position: absolute;
+    left: 0;
+    top: 11px;
+    color: var(--primary);
+    font-size: 15px;
+}
+
+/* =========================
+   IMAGE CONTENT
+========================= */
+
+.care-image {
+    position: relative;
+}
+
+.care-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 24px;
+}
+
+.image-badge {
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+    background: #fff;
+    border-radius: 15px;
+    padding: 17px 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,.12);
+}
+
+.image-badge strong {
+    display: block;
+    color: var(--dark);
+    font-size: 17px;
+}
+
+.image-badge span {
+    font-size: 13px;
+    color: var(--text);
+}
+
+/* =========================
+   HIGHLIGHT BOX
+========================= */
+
+.care-highlight {
+    background: var(--dark);
+    border-radius: 25px;
+    padding: 45px;
+    color: white;
+}
+
+.care-highlight h2 {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.care-highlight p {
+    color: rgba(255,255,255,.75);
+    line-height: 1.8;
+}
+
+/* =========================
+   CTA
+========================= */
+
+.care-cta {
+    background: var(--primary);
+    padding: 60px 0;
+}
+
+.care-cta h2 {
+    color: white;
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.care-cta p {
+    color: rgba(255,255,255,.85);
+}
+
+.btn-care {
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 9px;
+    font-weight: 600;
+}
+
+.btn-care:hover {
+    background: #e9684d;
+    color: white;
+}
+
+/* =========================
+   DOCTOR CARD
+========================= */
+
+.doctor-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 28px;
+    height: 100%;
+}
+
+.doctor-avatar {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: #e7f6f2;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+.doctor-card h3 {
+    color: var(--dark);
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.doctor-card .qualification {
+    color: var(--primary);
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.doctor-card p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+/* =========================
+   SPECIAL CLINIC
+========================= */
+
+.special-clinic {
+    border: 2px solid rgba(244,122,93,.25);
+    background: #fff8f5;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.special-clinic-icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 14px;
+    background: var(--accent);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.special-clinic h3 {
+    color: var(--dark);
+    font-size: 21px;
+}
+
+.special-clinic .time {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 767px) {
+
+    .care-hero {
+        padding: 70px 0 65px;
+    }
+
+    .care-hero p {
+        font-size: 16px;
+    }
+
+    .care-section {
+        padding: 65px 0;
+    }
+
+    .care-image img {
+        height: 350px;
+    }
+
+    .care-highlight {
+        padding: 30px;
+    }
+
+    .care-highlight h2 {
+        font-size: 27px;
+    }
+}
