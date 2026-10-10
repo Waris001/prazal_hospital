@@ -1,9 +1,10 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" class="home-loader-pending">
 
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="assets/images/logo.png">
 	<meta name="description"
 		content="Prazal Hospital in Domariaganj, Siddharth Nagar. Compassionate healthcare for you and your family.">
 	<title>Prazal Hospital | Domariaganj, Siddharth Nagar</title>
@@ -15,9 +16,19 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/premium.css">
+	<link rel="stylesheet" href="assets/css/home-cinematic.css">
+	<noscript><style>html.home-loader-pending body > :not(.home-intro-loader) { visibility: visible !important; } .home-intro-loader { display: none !important; }</style></noscript>
 </head>
 
-<body id="top">
+<body id="top" class="home-loading">
+	<div class="home-intro-loader" aria-hidden="true">
+		<div class="home-loader-inner">
+			<div class="home-loader-brand"><img src="assets/images/logo.png" alt=""><strong>Prazal Hospital</strong></div>
+			<svg class="home-loader-pulse" viewBox="0 0 320 36" preserveAspectRatio="none"><path d="M0 19h82l10-9 13 19 12-27 15 31 13-14h175"/></svg>
+			<div class="home-loader-caption">Care in every heartbeat</div>
+		</div>
+	</div>
 	<div class="topbar py-2">
 		<div class="container d-flex justify-content-between align-items-center">
 			<span><strong class="topbar-availability me-3"><i class="bi bi-clock-fill me-1"></i>24/7</strong><i
@@ -43,10 +54,7 @@
 							data-bs-toggle="dropdown" aria-expanded="false">Our Care</a>
 						<ul class="dropdown-menu">
 							<li><a class="dropdown-item" href="ourcare.html#medical-care">Medical Care</a></li>
-							<li><a class="dropdown-item" href="ourcare.html#treatments">Treatments &amp; Services</a>
-							<!-- </li>
-							<li><a class="dropdown-item" href="ourcare.html#hospital-services">Hospital Services</a>
-							</li> -->
+							<li><a class="dropdown-item" href="ourcare.html#treatments">Treatments &amp; Services</a></li>
 							<li><a class="dropdown-item" href="ourcare.html#facilities">Care Facilities</a></li>
 							<li><a class="dropdown-item" href="ourcare.html#what-we-offer">What We Offer</a></li>
 							<!-- <li><a class="dropdown-item" href="ourcare.html#facilities">Our Facilities</a></li> -->
@@ -517,7 +525,7 @@
 										<i class="bi bi-arrow-right ms-2"></i>
 									</a>
 
-									<a href="our-care.html"
+									<a href="ourcare.html"
 									class="btn prazal-btn-outline">
 										Explore Our Care
 									</a>
@@ -561,7 +569,7 @@
 
 								<div class="prazal-hero-buttons">
 
-									<a href="medical-care.html"
+									<a href="ourcare.html#medical-care"
 									class="btn prazal-btn-primary">
 										Discover Our Care
 										<i class="bi bi-arrow-right ms-2"></i>
@@ -703,7 +711,7 @@
 						</h2>
 
 						<p class="prazal-intro-text">
-							Prazal Hospital & Heart Centre provides medical,
+							Prazal Hospital &amp; Heart Centre provides medical,
 							surgical, maternity and specialist care for individuals
 							and families in Domariaganj and surrounding areas.
 						</p>
@@ -714,7 +722,7 @@
 							every patient feel cared for.
 						</p>
 
-						<a href="about-us.html"
+						<a href="about.html"
 						class="prazal-text-link">
 
 							Learn more about us
@@ -770,7 +778,7 @@
 								<i class="bi bi-heart-pulse"></i>
 							</div>
 
-							<h3>Heart & Cardiac Care</h3>
+							<h3>Heart &amp; Cardiac Care</h3>
 
 							<p>
 								Heart-related evaluation, diagnosis and
@@ -796,7 +804,7 @@
 								<i class="bi bi-stars"></i>
 							</div>
 
-							<h3>Skin & Dermatology</h3>
+							<h3>Skin &amp; Dermatology</h3>
 
 							<p>
 								Treatment for common skin conditions,
@@ -822,7 +830,7 @@
 								<i class="bi bi-gender-female"></i>
 							</div>
 
-							<h3>Women's & Maternity Care</h3>
+							<h3>Women's &amp; Maternity Care</h3>
 
 							<p>
 								Gynecological, pregnancy and maternity care
@@ -848,7 +856,7 @@
 								<i class="bi bi-lungs"></i>
 							</div>
 
-							<h3>Respiratory & Allergy Care</h3>
+							<h3>Respiratory &amp; Allergy Care</h3>
 
 							<p>
 								Care for asthma, allergies and
@@ -964,7 +972,7 @@
 								</span>
 
 								<h3>
-									General & Laparoscopic Surgery
+							General &amp; Laparoscopic Surgery
 								</h3>
 
 								<p>
@@ -973,7 +981,7 @@
 									with laparoscopic procedures where appropriate.
 								</p>
 
-								<a href="treatments-services.html"
+								<a href="ourcare.html#treatments"
 								class="prazal-treatment-link">
 
 									View Treatments
@@ -1004,7 +1012,7 @@
 								</span>
 
 								<h3>
-									Care for Mothers & Babies
+							Care for Mothers &amp; Babies
 								</h3>
 
 								<p>
@@ -1013,7 +1021,7 @@
 									Caesarean delivery.
 								</p>
 
-								<a href="treatments-services.html"
+								<a href="ourcare.html#treatments"
 								class="prazal-treatment-link">
 
 									Explore Maternity Care
@@ -1562,15 +1570,17 @@
 			</div>
 			<div class="footer-bottom pt-3 d-flex flex-column flex-md-row justify-content-between gap-2 small">
 				<span>&copy; 2026 Prazal Hospital. All rights reserved.<br>Design and developed by <a
-						href="https://www.nexatechit.com" target="_blank" rel="noopener">NexTech IT</a></span><span>Made
+						href="https://biznis360.in" target="_blank" rel="noopener">BizNis 360</a></span><span>Made
 					for better local care.</span></div>
 		</div>
 	</footer>
 	<div class="floating-actions" aria-label="Quick actions"><a class="floating-action floating-top" href="#top"
 			aria-label="Back to top" title="Back to top"><i class="bi bi-arrow-up"></i></a><a
-			class="floating-action floating-whatsapp" href="https://wa.me/910000000000" target="_blank" rel="noopener"
+			class="floating-action floating-whatsapp" href="https://wa.me/919415782089" target="_blank" rel="noopener"
 			aria-label="Chat with us on WhatsApp" title="Chat on WhatsApp"><i class="bi bi-whatsapp"></i></a></div>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/premium.js"></script>
+	<script src="assets/js/home-cinematic.js"></script>
 </body>
 
 </html>
