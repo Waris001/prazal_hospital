@@ -77,20 +77,6 @@ html.home-loader-pending body > :not(.home-intro-loader) { visibility: hidden; }
 @keyframes homeHeroSheen { to { background-position: 0 0, -220% 0; } }
 
 .home-ambient-layer { position: absolute; inset: 0; z-index: 4; pointer-events: none; overflow: hidden; }
-.home-orbit {
-    position: absolute;
-    width: min(42vw, 610px);
-    aspect-ratio: 1;
-    right: -9%;
-    top: 11%;
-    border: 1px solid rgba(255,255,255,.12);
-    border-radius: 50%;
-    animation: homeOrbitSpin 28s linear infinite;
-}
-.home-orbit::before, .home-orbit::after { content: ""; position: absolute; border-radius: 50%; }
-.home-orbit::before { inset: 13%; border: 1px dashed rgba(255,255,255,.12); }
-.home-orbit::after { width: 12px; height: 12px; top: 20%; left: 3.5%; background: #ff8d71; box-shadow: 0 0 22px rgba(255,141,113,.8); }
-@keyframes homeOrbitSpin { to { transform: rotate(360deg); } }
 
 .home-particle { position: absolute; color: rgba(255,255,255,.28); font-size: var(--particle-size); animation: homeParticleFloat var(--particle-duration) ease-in-out infinite alternate; animation-delay: var(--particle-delay); }
 .home-particle::before { content: "+"; }
@@ -220,7 +206,7 @@ html.home-loader-pending body > :not(.home-intro-loader) { visibility: hidden; }
 .home-magnetic { will-change: transform; }
 
 @media (max-width: 991.98px) {
-    .home-vitals, .home-orbit, .home-scene-rail { display: none; }
+    .home-vitals, .home-scene-rail { display: none; }
     #prazal-home-hero::after { background-size: 44px 44px; opacity: .1; }
     .home-service-item { padding: 0 1.3rem; }
 }

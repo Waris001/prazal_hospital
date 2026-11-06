@@ -178,7 +178,7 @@ footer .bi { color: var(--coral); }
 .contact-hero { padding: 4.5rem 0 3.5rem; background-color: var(--mint); background-image: linear-gradient(rgba(233, 245, 241, .64), rgba(233, 245, 241, .64)), url('https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?auto=format&fit=crop&w=1600&q=85'); background-position: center; background-size: cover; }
 .about-hero { background-image: linear-gradient(rgba(233, 245, 241, .58), rgba(233, 245, 241, .58)), url('https://images.unsplash.com/photo-1551601651-2a8555f1a136?q=90&w=1600&auto=format&fit=crop'); }
 .doctors-hero { background-image: linear-gradient(rgba(233, 245, 241, .62), rgba(233, 245, 241, .62)), url('https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=90&w=1600&auto=format&fit=crop'); background-position: center 72%; }
-.gallery-hero { position: relative; isolation: isolate; overflow: hidden; background: var(--ink) url('../images/Prazal Hospital Entrance with Ambulance.png') center 58% / cover no-repeat; }
+.gallery-hero { position: relative; isolation: isolate; overflow: hidden; background: var(--ink) url('../images/Prazal Hospital Entrance with Ambulance.png') center 30% / cover no-repeat; }
 .gallery-hero::after { content: ''; position: absolute; inset: 0; z-index: -1; background: rgba(233, 245, 241, .66); }
 .gallery-hero-video { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; object-position: center; }
 .gallery-hero-content { position: relative; z-index: 1; }
@@ -1033,6 +1033,7 @@ footer .bi { color: var(--coral); }
 .prazal-hero-buttons {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 13px;
 }
 
@@ -1136,15 +1137,15 @@ footer .bi { color: var(--coral); }
     }
 
     .prazal-hero-image--facade {
-        object-position: 50% center;
+        object-position: 62% center;
     }
 
     .prazal-hero-overlay {
         background:
             linear-gradient(
                 180deg,
-                rgba(7,48,53,.68),
-                rgba(7,48,53,.94)
+                rgba(7,48,53,.52),
+                rgba(7,48,53,.78)
             );
     }
 

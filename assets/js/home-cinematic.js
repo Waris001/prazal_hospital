@@ -39,7 +39,6 @@
         const layer = document.createElement('div');
         layer.className = 'home-ambient-layer';
         layer.setAttribute('aria-hidden', 'true');
-        layer.innerHTML = '<div class="home-orbit"></div>';
         for (let index = 0; index < 9; index += 1) {
             const particle = document.createElement('span');
             particle.className = 'home-particle';

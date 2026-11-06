@@ -172,12 +172,13 @@ body::before {
 .about-hero { background-image: url('https://images.unsplash.com/photo-1551601651-2a8555f1a136?q=90&w=1800&auto=format&fit=crop'); }
 .doctors-hero { background-image: url('https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=90&w=1800&auto=format&fit=crop'); }
 .contact-hero:not(.about-hero):not(.doctors-hero):not(.gallery-hero) { background-image: url('https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?auto=format&fit=crop&w=1800&q=90'); }
-.gallery-hero::after { z-index: -1; background: linear-gradient(100deg, rgba(4,39,45,.94), rgba(4,49,53,.5)); }
+.gallery-hero::before { background: linear-gradient(100deg, rgba(4,39,45,.78) 0%, rgba(4,49,53,.42) 48%, rgba(4,49,53,.12) 100%); }
+.gallery-hero::after { content: none; }
 
 /* Homepage hero */
 .prazal-hero-section { background: var(--premium-ink); }
 .prazal-hero-image { height: min(78vh, 760px); min-height: 620px; transform: scale(1.025); }
-.prazal-hero-overlay { background: linear-gradient(90deg, rgba(3,35,41,.95) 0%, rgba(3,43,47,.78) 47%, rgba(3,43,47,.12) 100%); }
+.prazal-hero-overlay { background: linear-gradient(90deg, rgba(3,35,41,.78) 0%, rgba(3,43,47,.58) 47%, rgba(3,43,47,.12) 100%); }
 .prazal-hero-text h1 { max-width: 760px; font-size: clamp(3.2rem, 6vw, 5.5rem); letter-spacing: -.045em; }
 .prazal-hero-text p { max-width: 650px; }
 .prazal-hero-indicators button { transition: width .35s ease, opacity .35s ease; }
@@ -283,9 +284,10 @@ body::before {
     .topbar-rating { display: none; }
     .brand-logo { width: 44px; height: 44px; }
     .contact-hero, .care-hero { min-height: 420px; padding: 4rem 0; }
-    .contact-hero::before, .care-hero::before { background: linear-gradient(90deg, rgba(4,39,45,.94), rgba(4,49,53,.76)); }
+    .contact-hero:not(.gallery-hero)::before, .care-hero::before { background: linear-gradient(90deg, rgba(4,39,45,.94), rgba(4,49,53,.76)); }
     .prazal-hero-text h1 { font-size: clamp(2.75rem, 12vw, 4rem); }
     .prazal-hero-text p { font-size: 1rem; }
+    .prazal-hero-overlay { background: linear-gradient(180deg, rgba(3,43,47,.52), rgba(3,43,47,.78)); }
     .prazal-hero-buttons .btn, .prazal-cta-buttons .btn { width: 100%; text-align: center; }
     .floating-actions { right: .9rem; bottom: .9rem; }
     .floating-action { width: 48px; height: 48px; }
